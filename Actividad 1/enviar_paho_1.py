@@ -25,7 +25,6 @@ def getListOfProcessSortedByMemory():
     return listOfProcObjects
 
 client = paho.Client()
-#client.username_pw_set("etorresr", "G4t0")
 client.on_publish = on_publish
 client.connect("broker.mqttdashboard.com", 1883)
 client.loop_start()
